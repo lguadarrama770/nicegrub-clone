@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+.header {
+  padding: 60px;
+  text-align: left;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+.topnav {
+  text-align: right;
+}
+
+.firstdiv {
+    text-align: center; 
+}
+
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.one {
+    border-color: #4CAF50;
+    color: green;
+}
+
+.one:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.two {
+  border-color: #4CAF50;
+  color: green;
+}
+.two:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.three {
+  border-color: #4CAF50;
+  color: green;
+}
+.three:hover {
+  background-color: #4CAF50;
+  color: white;
+}
