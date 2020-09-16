@@ -17,46 +17,25 @@ h1 {
   word-break: break-all;
 }
 
-.row {
-  margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column (if you want) */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  display: none; /* Hide columns by default */
-}
-
-/* Clear floats after rows */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
-
 .header {
   padding: 60px;
   text-align: left;
-  background: #1abc9c;
   color: white;
   font-size: 30px;
+  background-image: url("simple-house-01.jpg");
+}
+
+h3 {
+  color:#006699;
+}
+
+.amount{
+  color: #008E00;
 }
 
 .topnav {
   text-align: right;
+  font-;
 }
 
 .firstdiv {
@@ -73,29 +52,51 @@ h1 {
 }
 
 .one {
-    border-color: #4CAF50;
-    color: green;
+    border-color: #009959;    ;
+    color: #009959;
 }
 
 .one:hover {
-  background-color: #4CAF50;
+  background-color: #009959;
   color: white;
 }
 
 .two {
-  border-color: #4CAF50;
-  color: green;
+  border-color: #009959;
+  color: #009959;
 }
 .two:hover {
-  background-color: #4CAF50;
+  background-color: #009959;
   color: white;
 }
 
 .three {
-  border-color: #4CAF50;
+  border-color: #009959;
   color: green;
 }
 .three:hover {
-  background-color: #4CAF50;
+  background-color: #009959;
   color: white;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
 }
